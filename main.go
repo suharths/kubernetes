@@ -9,9 +9,8 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func homeLink(w http.ResponseWriter, r *http.Request) { 
+func homeLink(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Selamat Datang "+os.Getenv("NAMA")+" di Sinau Docker!")
-
 }
 
 func main() {
